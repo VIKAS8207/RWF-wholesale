@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RWF foods</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+    <div class="js-container"></div>
+    <script src="https://unpkg.com/supersimpledev/react.js"></script>
+    <script src="https://unpkg.com/supersimpledev/react-dom.js"></script>
+    <script src="https://unpkg.com/supersimpledev/babel.js"></script>
+    <script type="text/babel">
+
+
+
+import React from 'react';
+import Navbar from './Navbar'; 
+            function Home(){
+            return (
+                <div className="pt-[5rem] lg:pt-0">
+
+
+                    <Navbar />
+
+                    
+
+                    <section className="hidden lg:flex h-[6vh] w-full  mt-[7.5rem] border-b border-orange-550/100 flex items-stretch">
+
+                        <div className="max-w-6xl mx-auto w-full flex">
+                            <div className="flex justify-between items-center w-full">
+                                <button className="flex items-center gap-2 px-6 w-full h-full hover:bg-orange-500/30 transition-colors self-stretch justify-center">
+                                    <img src="/image/turkey.png" alt="turkey" 
+                                    className="h-6 object-contain" />
+                                        <span className="text-sm">Wholesale Meat</span>
+                                </button>
+
+                                <button className="flex items-center gap-2 px-6 w-full h-full hover:bg-orange-500/30 transition-colors self-stretch justify-center">
+                                    <img src="/image/pig.png" alt="turkey" 
+                                    className="h-6 object-contain" />
+                                    <span className="text-sm">Wholesale Butcher</span>
+                                </button>
+
+                                <button className="flex items-center gap-2 px-6 w-full h-full hover:bg-orange-500/30 transition-colors self-stretch justify-center">
+                                    <img src="/image/conveyor-belt.png" alt="turkey" 
+                                    className="h-6 object-contain" />
+                                    <span className="text-sm">Food Manufacturing</span>
+                                </button>
+
+                                <button className="flex items-center gap-2 px-6 w-full h-full hover:bg-orange-500/30 transition-colors self-stretch justify-center">
+                                    <img src="/image/products.png" alt="turkey" 
+                                    className="h-6 object-contain" />
+                                    <span className="text-sm">Goverment Agencies</span>
+                                </button>
+
+                                <button className="flex items-center gap-2 px-6 w-full h-full hover:bg-orange-500/30 transition-colors self-stretch justify-center">
+                                    <img src="/image/take-away.png" alt="turkey" 
+                                    className="h-6 object-contain" />
+                                    <span className="text-sm">Ready To Eat</span>
+                                </button>
+
+                            </div>
+                        </div>
+
+                    </section>
+
+                    
+
+                    <section className="w-full h-[8vh] flex items-stretch">
+                        <div className="max-w-7xl mx-auto w-full flex">
+                            <div className="grid grid-cols-4 lg:grid-cols-3  items-center w-full">
+
+                                <div className="flex flex-col lg:flex-row items-center px-6 w-full h-full justify-center text-center lg:text-left">
+                                    <img src="/image/beefimg.png" alt="turkey" 
+                                    className="h-20 md:h-25 lg:h-20 object-contain" />
+                                    <div className="flex flex-col">
+                                        <span className="text-sm font-bold md:block lg:hidden -mt-[0.5rem]">Beef</span>
+                                        <span className="text-sm hidden lg:flex">Ethically sourced from premium local farmers. Quality cattle, raised with total care.</span>
+                                    </div>
+                                </div>
+
+                                <div className="flex flex-col lg:flex-row items-center px-6 w-full h-full justify-center text-center lg:text-left">
+                                    <img src="/image/cheeseimg.png" alt="turkey" 
+                                    className="h-20 md:h-25 lg:h-20 object-contain" />
+                                    <div className="flex flex-col">
+                                        <span className="text-sm font-bold md:block lg:hidden -mt-[0.5rem]">Cheese</span>
+                                        <span className="text-sm hidden lg:flex">Ethically sourced from premium local farmers. Quality cattle, raised with total care.</span>
+                                    </div>
+                                </div>
+
+                                <div className="flex flex-col lg:flex-row items-center px-6 w-full h-full justify-center text-center lg:text-left">
+                                    <img src="/image/chickenimg.png" alt="turkey" 
+                                    className="h-20 md:h-25 lg:h-20 object-contain" />
+                                    <div className="flex flex-col">
+                                        <span className="text-sm font-bold md:block lg:hidden -mt-[0.5rem]">Chicken</span>
+                                        <span className="text-sm hidden lg:flex">Ethically sourced from premium local farmers. Quality cattle, raised with total care.</span>
+                                    </div>
+                                </div>
+
+                                <div className="flex flex-col lg:flex-row items-center px-6 w-full h-full justify-center text-center lg:text-left lg:hidden">
+                                    <img src="/image/porkimg.png" alt="turkey" 
+                                    className="h-20 md:h-25 lg:h-20 object-contain" />
+                                    <div className="flex flex-col">
+                                        <span className="text-sm font-bold md:block lg:hidden -mt-[0.5rem]">Pork</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </section>
+
+                    <section className="w-full px-2 pb-8 mb-10 py-14 lg:py-10">
+                        <div className="max-w-6xl mx-auto w-full flex justify-center">
+                            
+                            <a href="#" className="group flex items-center justify-center gap-2 w-[12rem] px-4 py-3 mx-auto bg-orange-500 rounded-[10rem] hover:bg-orange-600 transition-colors">
+                                <span className="font-bold text-white">Start Shopping</span>
+                                <svg fill="none" viewBox="0 0 24 24" strokeWidth={3} stroke="white" className="w-5 h-5transition-transform duration-300 group-hover:translate-x-1">
+                                    <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                                </svg>
+                            </a>
+                            
+                        </div>
+                    </section>
+
+                    <section className="w-full mb-10">
+                        <div className="max-w-7xl mx-auto leading-none">
+                            <span className="flex justify-center text-center font-semibold text-[24px] lg:text-[32px]">From Farm to Your Door - Our Top Picks</span><br></br>
+                            <span className="flex justify-center text-black/50 text-[16px]">Top-Rated Picks</span>
+                        </div>
+                    </section>
+
+                    
+
+                    <section className="w-full mt-20">
+                        <div className="max-w-7xl mx-auto px-4">
+                            <span className="flex justify-center font-semibold text-20 leading-[1]"> Reliable Ordering & Delivery </span>
+                            <span className="flex justify-center font-bold text-4xl"> Start Your Rydges Order </span>
+                        </div>
+                    </section>
+
+                    <section className="w-full px-2 pb-8 mb-10 py-14 lg:py-10">
+                        <div className="max-w-6xl mx-auto w-full flex justify-center">
+                            
+                            <a href="#" className="group flex items-center justify-center gap-2 w-[12rem] px-4 py-3 mx-auto bg-orange-500 rounded-[10rem] hover:bg-orange-600 transition-colors">
+                                <span className="font-bold text-white">Order Now</span>
+                                <svg fill="none" viewBox="0 0 24 24" strokeWidth={3} stroke="white" className="w-5 h-5transition-transform duration-300 group-hover:translate-x-1">
+                                    <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                                </svg>
+                            </a>
+                            
+                        </div>
+                    </section>
+
+                    
+
+                </div>
+            );
+        }
+
+
+
+
+
+
+    const container = document.querySelector('.js-container');
+    ReactDOM.createRoot(container).render(<Home />);
+    </script>
+    
+</body>
+</html>
