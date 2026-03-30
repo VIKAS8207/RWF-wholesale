@@ -1,172 +1,204 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="light" lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RWF foods</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body>
-
-    <div class="js-container"></div>
-    <script src="https://unpkg.com/supersimpledev/react.js"></script>
-    <script src="https://unpkg.com/supersimpledev/react-dom.js"></script>
-    <script src="https://unpkg.com/supersimpledev/babel.js"></script>
-    <script type="text/babel">
-
-
-
-import React from 'react';
-import Navbar from './Navbar'; 
-            function Home(){
-            return (
-                <div className="pt-[5rem] lg:pt-0">
-
-
-                    <Navbar />
-
-                    
-
-                    <section className="hidden lg:flex h-[6vh] w-full  mt-[7.5rem] border-b border-orange-550/100 flex items-stretch">
-
-                        <div className="max-w-6xl mx-auto w-full flex">
-                            <div className="flex justify-between items-center w-full">
-                                <button className="flex items-center gap-2 px-6 w-full h-full hover:bg-orange-500/30 transition-colors self-stretch justify-center">
-                                    <img src="/image/turkey.png" alt="turkey" 
-                                    className="h-6 object-contain" />
-                                        <span className="text-sm">Wholesale Meat</span>
-                                </button>
-
-                                <button className="flex items-center gap-2 px-6 w-full h-full hover:bg-orange-500/30 transition-colors self-stretch justify-center">
-                                    <img src="/image/pig.png" alt="turkey" 
-                                    className="h-6 object-contain" />
-                                    <span className="text-sm">Wholesale Butcher</span>
-                                </button>
-
-                                <button className="flex items-center gap-2 px-6 w-full h-full hover:bg-orange-500/30 transition-colors self-stretch justify-center">
-                                    <img src="/image/conveyor-belt.png" alt="turkey" 
-                                    className="h-6 object-contain" />
-                                    <span className="text-sm">Food Manufacturing</span>
-                                </button>
-
-                                <button className="flex items-center gap-2 px-6 w-full h-full hover:bg-orange-500/30 transition-colors self-stretch justify-center">
-                                    <img src="/image/products.png" alt="turkey" 
-                                    className="h-6 object-contain" />
-                                    <span className="text-sm">Goverment Agencies</span>
-                                </button>
-
-                                <button className="flex items-center gap-2 px-6 w-full h-full hover:bg-orange-500/30 transition-colors self-stretch justify-center">
-                                    <img src="/image/take-away.png" alt="turkey" 
-                                    className="h-6 object-contain" />
-                                    <span className="text-sm">Ready To Eat</span>
-                                </button>
-
-                            </div>
-                        </div>
-
-                    </section>
-
-                    
-
-                    <section className="w-full h-[8vh] flex items-stretch">
-                        <div className="max-w-7xl mx-auto w-full flex">
-                            <div className="grid grid-cols-4 lg:grid-cols-3  items-center w-full">
-
-                                <div className="flex flex-col lg:flex-row items-center px-6 w-full h-full justify-center text-center lg:text-left">
-                                    <img src="/image/beefimg.png" alt="turkey" 
-                                    className="h-20 md:h-25 lg:h-20 object-contain" />
-                                    <div className="flex flex-col">
-                                        <span className="text-sm font-bold md:block lg:hidden -mt-[0.5rem]">Beef</span>
-                                        <span className="text-sm hidden lg:flex">Ethically sourced from premium local farmers. Quality cattle, raised with total care.</span>
-                                    </div>
-                                </div>
-
-                                <div className="flex flex-col lg:flex-row items-center px-6 w-full h-full justify-center text-center lg:text-left">
-                                    <img src="/image/cheeseimg.png" alt="turkey" 
-                                    className="h-20 md:h-25 lg:h-20 object-contain" />
-                                    <div className="flex flex-col">
-                                        <span className="text-sm font-bold md:block lg:hidden -mt-[0.5rem]">Cheese</span>
-                                        <span className="text-sm hidden lg:flex">Ethically sourced from premium local farmers. Quality cattle, raised with total care.</span>
-                                    </div>
-                                </div>
-
-                                <div className="flex flex-col lg:flex-row items-center px-6 w-full h-full justify-center text-center lg:text-left">
-                                    <img src="/image/chickenimg.png" alt="turkey" 
-                                    className="h-20 md:h-25 lg:h-20 object-contain" />
-                                    <div className="flex flex-col">
-                                        <span className="text-sm font-bold md:block lg:hidden -mt-[0.5rem]">Chicken</span>
-                                        <span className="text-sm hidden lg:flex">Ethically sourced from premium local farmers. Quality cattle, raised with total care.</span>
-                                    </div>
-                                </div>
-
-                                <div className="flex flex-col lg:flex-row items-center px-6 w-full h-full justify-center text-center lg:text-left lg:hidden">
-                                    <img src="/image/porkimg.png" alt="turkey" 
-                                    className="h-20 md:h-25 lg:h-20 object-contain" />
-                                    <div className="flex flex-col">
-                                        <span className="text-sm font-bold md:block lg:hidden -mt-[0.5rem]">Pork</span>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </section>
-
-                    <section className="w-full px-2 pb-8 mb-10 py-14 lg:py-10">
-                        <div className="max-w-6xl mx-auto w-full flex justify-center">
-                            
-                            <a href="#" className="group flex items-center justify-center gap-2 w-[12rem] px-4 py-3 mx-auto bg-orange-500 rounded-[10rem] hover:bg-orange-600 transition-colors">
-                                <span className="font-bold text-white">Start Shopping</span>
-                                <svg fill="none" viewBox="0 0 24 24" strokeWidth={3} stroke="white" className="w-5 h-5transition-transform duration-300 group-hover:translate-x-1">
-                                    <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-                                </svg>
-                            </a>
-                            
-                        </div>
-                    </section>
-
-                    <section className="w-full mb-10">
-                        <div className="max-w-7xl mx-auto leading-none">
-                            <span className="flex justify-center text-center font-semibold text-[24px] lg:text-[32px]">From Farm to Your Door - Our Top Picks</span><br></br>
-                            <span className="flex justify-center text-black/50 text-[16px]">Top-Rated Picks</span>
-                        </div>
-                    </section>
-
-                    
-
-                    <section className="w-full mt-20">
-                        <div className="max-w-7xl mx-auto px-4">
-                            <span className="flex justify-center font-semibold text-20 leading-[1]"> Reliable Ordering & Delivery </span>
-                            <span className="flex justify-center font-bold text-4xl"> Start Your Rydges Order </span>
-                        </div>
-                    </section>
-
-                    <section className="w-full px-2 pb-8 mb-10 py-14 lg:py-10">
-                        <div className="max-w-6xl mx-auto w-full flex justify-center">
-                            
-                            <a href="#" className="group flex items-center justify-center gap-2 w-[12rem] px-4 py-3 mx-auto bg-orange-500 rounded-[10rem] hover:bg-orange-600 transition-colors">
-                                <span className="font-bold text-white">Order Now</span>
-                                <svg fill="none" viewBox="0 0 24 24" strokeWidth={3} stroke="white" className="w-5 h-5transition-transform duration-300 group-hover:translate-x-1">
-                                    <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-                                </svg>
-                            </a>
-                            
-                        </div>
-                    </section>
-
-                    
-
-                </div>
-            );
-        }
-
-
-
-
-
-
-    const container = document.querySelector('.js-container');
-    ReactDOM.createRoot(container).render(<Home />);
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Klaimify LMS - Frappe Flow Dashboard</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <script id="tailwind-config">
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "frappe-bg": "#f8fafc",
+              "frappe-border": "#ebeff2",
+              "frappe-gray": "#6c757d",
+              "frappe-blue": "#171717", // Frappe's modern dark primary
+              "frappe-accent": "#007bff",
+              "status-red": "#ff5858",
+              "status-green": "#28a745",
+              "status-orange": "#ffa00a"
+            },
+            fontFamily: {
+              "sans": ["Inter", "sans-serif"]
+            }
+          },
+        },
+      }
     </script>
-    
+    <style>
+      body { background-color: #f8fafc; color: #1d2129; }
+      .frappe-card { background: #ffffff; border: 1px solid #ebeff2; border-radius: 8px; transition: all 0.2s ease; }
+      .frappe-card:hover { border-color: #d1d8dd; box-shadow: 0 4px 12px rgba(0,0,0,0.03); }
+      .sidebar-item { border-radius: 6px; margin: 2px 12px; transition: background 0.2s; }
+      .sidebar-item:hover { background: #f0f4f7; }
+      .sidebar-item.active { background: #ffffff; box-shadow: 0 1px 3px rgba(0,0,0,0.1); color: #1d2129; font-weight: 600; }
+      .indicator { width: 8px; height: 8px; border-radius: 50%; display: inline-block; margin-right: 6px; }
+    </style>
+</head>
+<body class="flex min-h-screen">
+
+<aside class="hidden md:flex flex-col w-60 bg-[#f4f7f9] border-r border-frappe-border h-screen sticky top-0">
+    <div class="p-6 flex items-center gap-3">
+        <div class="w-8 h-8 bg-frappe-blue rounded flex items-center justify-center text-white font-bold text-lg">K</div>
+        <span class="font-semibold text-lg tracking-tight">Klaimify LMS</span>
+    </div>
+
+    <div class="mt-4 flex-1 space-y-1">
+        <div class="px-6 py-2 text-[11px] font-bold text-frappe-gray uppercase tracking-widest">Workspace</div>
+        <a href="#" class="sidebar-item active flex items-center gap-3 px-4 py-2 text-sm">
+            <span class="material-symbols-outlined text-[20px]">grid_view</span> Dashboard
+        </a>
+        <a href="#" class="sidebar-item flex items-center gap-3 px-4 py-2 text-sm text-frappe-gray">
+            <span class="material-symbols-outlined text-[20px]">local_shipping</span> Assets
+        </a>
+        <a href="#" class="sidebar-item flex items-center gap-3 px-4 py-2 text-sm text-frappe-gray">
+            <span class="material-symbols-outlined text-[20px]">route</span> Trip Logs
+        </a>
+        <a href="#" class="sidebar-item flex items-center gap-3 px-4 py-2 text-sm text-frappe-gray">
+            <span class="material-symbols-outlined text-[20px]">group</span> Drivers
+        </a>
+    </div>
+
+    <div class="p-4 border-t border-frappe-border">
+        <div class="flex items-center gap-3 px-2">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCIbAEcctB-_mIgH39qOfGVgsdzH4Oa8hdsl5XSWXibhDz-5CjZ4CKg87VQoo699ZHJzQUfECLtSgJG_wrRy-R-AsWkSFplC65a92tAK-LB0CdG3oMPO-fWyWEMpwe-QDLwX1vjGkDXeOaWld6ZgE2q1lGiYvsOJohoTe0oOoVM4ZuzEgePDxzD44LXKkGLS8nIgu59hsOIcB-zVFWXfCTmZusCsmMy61d8ZGd_1waB1Cz3_porsC2ceTWKEGAjU9miXoqQFBvW6PQI" class="w-8 h-8 rounded-full border border-gray-200">
+            <div class="flex flex-col">
+                <span class="text-xs font-semibold">Vikas Vishwakarma</span>
+                <span class="text-[10px] text-frappe-gray">UX Designer</span>
+            </div>
+        </div>
+    </div>
+</aside>
+
+<main class="flex-1 flex flex-col">
+    <header class="h-14 bg-white border-b border-frappe-border flex items-center justify-between px-8 sticky top-0 z-50">
+        <div class="flex items-center gap-2 text-sm font-medium">
+            <span class="text-frappe-gray">Home</span>
+            <span class="text-frappe-gray">/</span>
+            <span class="text-frappe-blue">Fleet Dashboard</span>
+        </div>
+        <div class="flex items-center gap-4">
+            <div class="relative hidden lg:block">
+                <input type="text" placeholder="Search (Ctrl + G)" class="bg-[#f0f4f7] border-none rounded-md py-1.5 px-4 text-xs w-64 focus:ring-1 focus:ring-gray-300">
+            </div>
+        </div>
+    </header>
+
+    <div class="p-8 max-w-7xl mx-auto w-full space-y-8">
+        
+        <div class="bg-[#fff1f0] border border-[#ffa39e] p-4 rounded-lg flex items-center gap-4">
+            <span class="material-symbols-outlined text-status-red">report</span>
+            <div class="text-sm">
+                <span class="font-bold text-status-red">High Priority:</span> Fuel theft detected at <b>Sonipat Checkpoint</b> for Vehicle <b>HR38-E-1234</b>.
+            </div>
+            <button class="ml-auto text-xs font-bold text-status-red underline">View Details</button>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+            <div class="frappe-card p-5">
+                <div class="text-xs text-frappe-gray font-medium uppercase mb-2">Revenue (MTD)</div>
+                <div class="text-2xl font-semibold">₹4.2M</div>
+                <div class="text-[11px] text-status-green mt-2">↑ 12.4% from last month</div>
+            </div>
+            <div class="frappe-card p-5">
+                <div class="text-xs text-frappe-gray font-medium uppercase mb-2">Fuel Cost</div>
+                <div class="text-2xl font-semibold">₹1.8M</div>
+                <div class="text-[11px] text-status-red mt-2">↑ 4.1% increase</div>
+            </div>
+            <div class="frappe-card p-5">
+                <div class="text-xs text-frappe-gray font-medium uppercase mb-2">Assets Active</div>
+                <div class="text-2xl font-semibold">84 <span class="text-sm text-frappe-gray font-normal">/ 124</span></div>
+                <div class="w-full bg-gray-100 h-1.5 rounded-full mt-3">
+                    <div class="bg-frappe-accent h-full rounded-full w-[67%]"></div>
+                </div>
+            </div>
+            <div class="frappe-card p-5">
+                <div class="text-xs text-frappe-gray font-medium uppercase mb-2">Compliance Score</div>
+                <div class="text-2xl font-semibold">94%</div>
+                <div class="text-[11px] text-status-green mt-2">● Healthy</div>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            
+            <div class="lg:col-span-2 space-y-4">
+                <div class="flex items-center justify-between px-1">
+                    <h3 class="font-semibold text-gray-800">Ongoing Trips</h3>
+                    <button class="text-xs text-frappe-accent font-medium">View Report</button>
+                </div>
+                <div class="frappe-card overflow-hidden">
+                    <table class="w-full text-left text-sm">
+                        <thead class="bg-[#f9fafb] border-b border-frappe-border text-frappe-gray text-[11px] uppercase font-bold tracking-wider">
+                            <tr>
+                                <th class="px-6 py-3">Vehicle</th>
+                                <th class="px-6 py-3">Route</th>
+                                <th class="px-6 py-3">Status</th>
+                                <th class="px-6 py-3">ETA</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-frappe-border">
+                            <tr class="hover:bg-gray-50 cursor-pointer">
+                                <td class="px-6 py-4 font-medium">HR-38-AS-9981</td>
+                                <td class="px-6 py-4 text-frappe-gray">Delhi → Mumbai</td>
+                                <td class="px-6 py-4"><span class="indicator bg-status-green"></span>On Track</td>
+                                <td class="px-6 py-4 font-mono text-xs">2h 45m</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50 cursor-pointer">
+                                <td class="px-6 py-4 font-medium">MH-12-DE-4412</td>
+                                <td class="px-6 py-4 text-frappe-gray">Pune → Bangalore</td>
+                                <td class="px-6 py-4"><span class="indicator bg-status-orange"></span>Delayed</td>
+                                <td class="px-6 py-4 font-mono text-xs">4h 10m</td>
+                            </tr>
+                            <tr class="hover:bg-gray-50 cursor-pointer">
+                                <td class="px-6 py-4 font-medium">DL-01-XX-1234</td>
+                                <td class="px-6 py-4 text-frappe-gray">Jaipur → Ahmedabad</td>
+                                <td class="px-6 py-4"><span class="indicator bg-gray-300"></span>Loading</td>
+                                <td class="px-6 py-4 font-mono text-xs">--</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="space-y-6">
+                <h3 class="font-semibold text-gray-800">Critical Reminders</h3>
+                <div class="space-y-3">
+                    <div class="frappe-card p-4 border-l-4 border-status-red">
+                        <div class="text-xs font-bold text-status-red mb-1">INSURANCE EXPIRED</div>
+                        <div class="text-sm font-medium">MH-12-DE-4412</div>
+                        <div class="text-[11px] text-frappe-gray mt-1">Due: 2 days ago</div>
+                        <button class="mt-3 text-[11px] font-bold text-frappe-accent uppercase">Renew Now</button>
+                    </div>
+                    <div class="frappe-card p-4 border-l-4 border-status-orange">
+                        <div class="text-xs font-bold text-status-orange mb-1">FITNESS RENEWAL</div>
+                        <div class="text-sm font-medium">DL-01-XX-1234</div>
+                        <div class="text-[11px] text-frappe-gray mt-1">Due in 5 days</div>
+                        <button class="mt-3 text-[11px] font-bold text-frappe-accent uppercase">Update</button>
+                    </div>
+                </div>
+
+                <div class="frappe-card p-4 bg-gray-50 border-dashed border-gray-300">
+                    <div class="flex flex-col items-center py-4 text-center">
+                        <span class="material-symbols-outlined text-frappe-gray mb-2">map</span>
+                        <div class="text-sm font-semibold">Live Map View</div>
+                        <p class="text-[11px] text-frappe-gray mb-4">84 assets currently reporting</p>
+                        <button class="bg-white border border-gray-300 px-4 py-1.5 rounded-md text-xs font-bold shadow-sm">Open Workspace</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<nav class="md:hidden fixed bottom-0 left-0 right-0 bg-white border-t border-frappe-border flex justify-around py-3">
+    <span class="material-symbols-outlined text-frappe-blue">grid_view</span>
+    <span class="material-symbols-outlined text-frappe-gray">local_shipping</span>
+    <span class="material-symbols-outlined text-frappe-gray">route</span>
+    <span class="material-symbols-outlined text-frappe-gray">person</span>
+</nav>
+
 </body>
 </html>
